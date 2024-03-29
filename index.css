@@ -1,0 +1,443 @@
+:root{
+    --font1:20px;
+    --font2:24px;
+    --fontWeight1:300;
+    --fontWeight2:500;
+    --fontWeight3:700;
+    --primary:black;
+    --secondary:white;
+    --tertiary:#f7871f;
+    --shadow: 0px 0px 5px 2px lightgray;
+    --none:none;
+    --block:block;
+    --display:var(--none)
+
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: "Open Sans",sans-serif;
+}
+ul{
+    padding: 0px;;
+}
+li{
+
+ list-style: none;
+
+}
+a{
+    text-decoration: none;
+
+}
+.wrapper{
+    overflow-y:hidden
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.btn{
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  text-transform: capitalize;
+  cursor: pointer;
+
+}
+.display-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display-flex-sb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper{
+    background-color: rgb(225, 225, 225);
+}
+/* heading section */
+header{
+    margin:0px;
+    background-color: rgb(231, 231, 231);
+}
+.heading{
+   
+    gap:1rem;
+}
+.heading .left>a{
+  color: var(--tertiary);
+  width: 100%;
+  font-size: 2rem;
+  transition: all 0.5s linear;
+}
+.heading .left:hover {
+    transform: scale(1.2);
+    
+}
+.heading .left>a:hover{
+ 
+}
+.middle{
+   
+    position: relative;
+}
+.middle ul{
+    gap:1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: var(--font1);
+    font-weight: var(--fontWeight2);
+ 
+    
+}
+.middle ul li a{
+       color: var(--primary);
+}
+.sign-up{
+
+
+}
+.sign-in{
+    background-color: rgb(96, 96, 220);
+    color:var(--secondary);
+    margin-left: 1rem;
+    transition: all 0.15s linear;
+}
+.sign-in:hover{
+    background-color: var(--tertiary);
+    
+}
+.sign-up{
+border: none;
+padding: 10px 14px;
+border-radius: 8px;
+transition: all 0.15s linear;
+
+}
+.sign-up:hover{
+    transform: scale(1.1);
+
+}
+.heading .middle a{
+    cursor: pointer;
+}
+
+.heading a{
+
+    font-size: 1rem;
+}
+.heading .middle ul li{
+    position: relative;
+}
+.heading .middle ul li:hover{
+    transform: scale(1.2);
+    transition: all 0.5s linear;
+
+    
+}
+
+.heading .middle>ul>li>a::after{
+    content: '';
+    opacity: 1;
+    position: absolute;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;;
+    width: 0%;
+    transition: all 0.5s linear;
+    
+
+}
+.heading .middle ul li a:hover::after {
+ background-color:orangered;
+ opacity: 1;
+ width: 100%;
+
+}
+.middle [type="checkbox"]{
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 20px;
+    color: var(--tertiary);
+    cursor: pointer;
+}
+.middle [type="checkbox"]:checked +ul{
+    top:5px;
+    left: -2rem;
+    
+   
+}
+/* hero section */
+
+.hero{
+    position: relative;
+
+}
+.second-item{
+  gap: 2rem;
+  height: 70vh;
+   
+   
+}
+.download-icons{
+ width: 50%;
+
+}
+
+.car-img{
+  width: 50%;
+ height: 100%; 
+  background:linear-gradient( var(--tertiary), #e7a76c);
+  border-radius: 5%;
+
+
+}
+.car-img>div{
+    position: relative;
+     width: 100%;
+    height: 100%;
+
+}
+
+.car-img>div>img{
+     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    left: -12%;
+   
+}
+.download-icons>h4{
+    font-size: var(--font2);
+}
+.download-icons>h4>span{
+    color: #f7871f;
+    font-size: 2rem
+}
+.download-icons>p{
+    margin-top: 0;
+}
+.buttons{
+    display: flex;
+   
+}
+.app-btn, .google-btn{
+    background-color: black;
+    color: white;
+    transition: all 0.3s linear;
+    margin-right: 1rem;
+    
+}
+
+.app-btn:hover, .google-btn:hover{
+    transform: scale(1.1);
+}
+.date-selector{
+    position: absolute;
+    left: 40px;
+    bottom: 2vh;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.685);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.date-selector input{
+   background-color: lightgray;
+   border: none;
+   line-height: 2;
+   margin-top: 0.5rem;
+   padding: 5px;
+}
+.date-selector .submit-btn{
+    background-color:  rgb(96, 96, 220);
+    color: var(--secondary);
+}
+.date-selector .submit-btn:hover{
+    transform: scale(1.1);
+}
+
+/* booking steps */
+
+.rent-steps{
+    margin-top: 2rem;
+    background-color: white;
+   
+    padding-bottom: 2rem;
+}
+.rent-steps>div:first-child {
+   padding: 2rem ;
+   font-size: var(--font2);
+   text-align: center;
+   font-weight: 600;
+}
+.renting{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.renting .icon{
+    font-size: var(--font2);
+    color: var(--tertiary)
+    
+}
+.renting .location, .renting .pickup, .renting .book{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+   
+}
+  /* car -services */
+.car-rate{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem
+}
+.cars{
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+
+    
+    
+}
+.car-rate>div>img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: var(--shadow);
+}
+.car-rate>div>img:hover{
+    transform: scale(1.1);
+}
+
+.car-rate>div>div>button{
+border: none;
+margin-top: 0.5rem;
+font-size: 18px;
+color: var(--tertiary);
+
+
+}
+.car-rate .rent-btn{
+    width: 100%;
+}
+.car-rate .price, .car-rate .model{
+    padding: 1rem 0.7rem;
+}
+.car-rate .rent-btn>button:hover{
+background-color: blue;
+width: 100%;
+}
+/* footer */
+.footer{
+    margin-top: 2rem ;
+    padding: 2rem 0;
+    background-color: var(--tertiary);
+}
+.footer input, .footer button{
+    font-size: 1.2rem;
+    border: none;
+    padding: 5px;
+    box-shadow: var(--shadow);
+
+
+}
+.footer input{
+    
+}
+.footer button{
+
+    background-color: blue;
+    color: white;
+    transition: all 0.3s linear;
+}
+.footer button:hover{
+    transform: scale(1.1);
+}
+.email-details{
+    padding: 0 0.5rem;
+    border-radius: 10px;
+    height: 3rem;
+    background-color: white;
+    gap:1rem;
+}
+/* copy right */
+.copy{
+    margin: 1rem;
+}
+@media (max-width:990px) {
+    .renting{
+    grid-template-columns: 1fr 1fr;
+   }  
+}
+@media (max-width:600px) {
+   .date-selector{
+    margin-top: 2rem;
+    position: static;
+    flex-direction: column;
+   }
+
+    
+   .middle .links{
+    display: grid;
+    width: 100px;
+    position: absolute;
+    top:-250px;
+    transition: all 0.5s linear;
+    background-color:lightgray;
+    z-index: 1;
+    left: -2rem;
+    border-radius: 10px;
+   
+   }
+     
+   .hamburger{
+    display: block;
+  
+   
+   }
+   .renting{
+    grid-template-columns: 1fr;
+   }
+   .car-rate{
+      grid-template-columns: 1fr;
+   }
+    
+}
+
+@keyframes move {
+    0%{
+        display: block;
+        width: 20%;
+    }
+    25%{
+        display: block;
+        width: 40%;
+    }
+    50%{
+        display: block;
+          width: 60%;
+    }
+    75%{
+        display: block;
+          width: 80%;
+    }
+    100%{
+        display: block;
+          width: 100%;
+    }
+}
