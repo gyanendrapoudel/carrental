@@ -306,7 +306,7 @@ transition: all 0.15s linear;
 }
 .cars{
     box-shadow: var(--shadow);
-    border-radius: 10px;
+    border-radius: 11px;
 
     
     
@@ -316,8 +316,8 @@ transition: all 0.15s linear;
     height: 200px;
     object-fit: cover;
     object-position: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
     box-shadow: var(--shadow);
 }
 .car-rate>div>img:hover{
