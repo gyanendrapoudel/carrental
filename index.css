@@ -481,6 +481,26 @@ width: 100%;
     background-color: white;
     gap:1rem;
 }
+.social-links{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: right;
+    font-weight: 700;
+}
+.social-links>a:first-child{
+    color: rgb(24, 119, 242)
+
+}
+.social-links>a:nth-child(2){
+    color: rgb(202, 37, 37);
+}
+.social-links>a:nth-child(3){
+    color: rgb(29, 161, 242);
+}
+.social-links>a:last-child{
+    color:rgb(255, 0, 0)
+;
+}
 /* copy right */
 .copy{
     margin: 1rem;
