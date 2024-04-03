@@ -67,6 +67,11 @@ a{
 header{
     margin:0px;
     background-color: rgb(231, 231, 231);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1;
 }
 .heading{
    
