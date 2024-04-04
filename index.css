@@ -251,7 +251,7 @@ transition: all 0.15s linear;
 .date-selector{
     position: absolute;
     left: 40px;
-    bottom: 2vh;
+    bottom: 0;
     gap: 1rem;
     background-color: rgba(255, 255, 255, 0.685);
     padding: 1rem;
@@ -277,8 +277,8 @@ transition: all 0.15s linear;
 
 .rent-steps{
     margin-top: 2rem;
+    padding-top: 40px;
     background-color: white;
-   
     padding-bottom: 4rem ;
     margin-bottom: 2rem;
 
@@ -400,7 +400,8 @@ line-height: 2;
 }
   /* car -services */
 .car-rate{
-    margin-top: 2rem;
+    
+    padding-top: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:1rem
@@ -522,6 +523,13 @@ width: 100%;
     color:rgb(255, 0, 0)
 ;
 }
+/* map */
+ .maps{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:3rem;
+ }
 /* copy right */
 .copy{
     margin: 1rem;
@@ -533,11 +541,16 @@ width: 100%;
    
 }
 @media (max-width:600px) {
+    .second-item{
+        padding-top: 2rem;
+        flex-direction: column;
+    }
    .date-selector{
     margin-top: 2rem;
     position: static;
     flex-direction: column;
    }
+
 
     
    .middle .links{
@@ -568,9 +581,13 @@ width: 100%;
    .car-rate{
       grid-template-columns: 1fr;
    }
+    .maps{
+         grid-template-columns: 1fr;
+   }
+    }
 
     
-}
+
 
 @keyframes move {
     0%{
