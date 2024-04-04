@@ -2,7 +2,7 @@ export const cars = [
   {
     id: '1',
     img: './images/car1.png',
-    year: 2015,
+    year: 2020,
     name: '2020 Toyota RAV4',
     price: 200,
     person: 5,
