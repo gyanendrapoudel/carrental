@@ -563,8 +563,14 @@ width: 100%;
     z-index: 1;
     left: -2rem;
     border-radius: 10px;
+    padding-left: 2rem;
+    padding-top:1rem ;
+    padding-bottom:1rem ;
+
    
    }
+     
+
      
    .hamburger{
     display: block;
