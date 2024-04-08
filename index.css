@@ -555,7 +555,7 @@ width: 100%;
     
    .middle .links{
     display: grid;
-    width: 100px;
+    /* width: 150px; */
     position: absolute;
     top:-250px;
     transition: all 0.5s linear;
@@ -563,9 +563,8 @@ width: 100%;
     z-index: 1;
     left: -2rem;
     border-radius: 10px;
-    padding-left: 2rem;
-    padding-top:1rem ;
-    padding-bottom:1rem ;
+    padding: 1rem 1.5rem;
+   
 
    
    }
