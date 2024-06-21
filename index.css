@@ -176,12 +176,12 @@ transition: all 0.15s linear;
     color: var(--tertiary);
     cursor: pointer;
 }
-.middle [type="checkbox"]:checked +ul{
+/* .middle [type="checkbox"]:checked +ul{
     top:5px;
     left: -2rem;
     
    
-}
+} */
 /* hero section */
 
 .hero{
@@ -201,7 +201,7 @@ transition: all 0.15s linear;
 
 .car-img{
   width: 50%;
- height: 100%; 
+  height: 100%; 
   background:linear-gradient( var(--tertiary), #e7a76c);
   border-radius: 5%;
 
@@ -209,9 +209,9 @@ transition: all 0.15s linear;
 }
 .car-img>div{
     position: relative;
-     width: 100%;
+    width: 100%;
     height: 100%;
-
+  
 }
 
 .car-img>div>img{
@@ -221,6 +221,8 @@ transition: all 0.15s linear;
     object-position: center;
     position: absolute;
     left: -12%;
+    
+    animation: move 5s 2;
    
 }
 .download-icons>h4{
@@ -553,7 +555,7 @@ width: 100%;
 
 
     
-   .middle .links{
+   .links{
     display: grid;
     /* width: 150px; */
     position: absolute;
@@ -565,8 +567,14 @@ width: 100%;
     border-radius: 10px;
     padding: 1rem 1.5rem;
    
+   }
 
-   
+   .show-hamLinks{
+    
+    top:12px;
+    left:-2rem;
+    
+
    }
      
 
@@ -594,25 +602,26 @@ width: 100%;
     
 
 
+
 @keyframes move {
-    0%{
-        display: block;
-        width: 20%;
+    0% {
+        transform:  translateX(10px)  rotate(0deg) ;
+        
     }
-    25%{
-        display: block;
-        width: 40%;
+    25% {
+        transform: rotate(90deg) translateX(10px) rotate(-90deg);
+       
     }
-    50%{
-        display: block;
-          width: 60%;
+    50% {
+        transform:  rotate(180deg) translateX(10px) rotate(-180deg);
+       
     }
-    75%{
-        display: block;
-          width: 80%;
+    75% {
+        transform:  rotate(270deg) translateX(10px) rotate(-270deg);
+        
     }
-    100%{
-        display: block;
-          width: 100%;
+    100% {
+        transform: rotate(360deg) translateX(10px) rotate(-360deg);
+       
     }
 }

@@ -30,5 +30,13 @@ cars.forEach((car)=>{
             </div>`
 })
 
-console.log(carHTML);
-document.querySelector('.car-rate').innerHTML=carHTML
+
+document.querySelector('.car-rate').innerHTML = carHTML
+const links = document.querySelector('.links')
+const hamIcon = document.querySelector('.hamburger')
+hamIcon.addEventListener('click', () => {
+  links.classList.toggle('show-hamLinks')
+})
+links.addEventListener('click', () => {
+  links.classList.toggle('show-hamLinks')
+})
